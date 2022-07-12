@@ -1,0 +1,61 @@
+{
+  "resourceType": "ValueSet",
+  "url": "http://rannihospital.com/bestservice",
+  "title": "Blood Group Value Set",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://rannihospital.com/service",
+        "concept": [
+          {
+            "code": "AP",
+            "display": "A Rh+"
+          },
+          {
+            "code": "AN",
+            "display": "A Rh-"
+          },
+          {
+            "code": "ABP",
+            "display": "AB Rh+"
+          },
+          {
+            "code": "ABN",
+            "display": "AB Rh-"
+          },
+          {
+            "code": "BP",
+            "display": "B Rh+"
+          },
+          {
+            "code": "BN",
+            "display": "B Rh-"
+          },
+          {
+            "code": "OP",
+            "display": "O Rh+"
+          },
+          {
+            "code": "ON",
+            "display": "O Rh-"
+          }
+        ]
+      }
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Blood Group Value Set</h2><tt>http://rannihospital.com/bestservice</tt></div>"
+  },
+  "name": "RanniHospitalVS"
+}

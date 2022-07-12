@@ -1,0 +1,66 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "202",
+  "title": "Blood Group Code System",
+  "url": "http://rannihospital.com/service",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compositional": false,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "AP",
+      "display": "A Rh+",
+      "definition": "A Positive"
+    },
+    {
+      "code": "AN",
+      "display": "A Rh-",
+      "definition": "A Negative"
+    },
+    {
+      "code": "BP",
+      "display": "B Rh+",
+      "definition": "B Positive"
+    },
+    {
+      "code": "BN",
+      "display": "B Rh-",
+      "definition": "B Negative"
+    },
+    {
+      "code": "ABP",
+      "display": "AB Rh+",
+      "definition": "AB Positive"
+    },
+    {
+      "code": "ABN",
+      "display": "AB Rh-",
+      "definition": "AB Negative"
+    },
+    {
+      "code": "OP",
+      "display": "O Rh+",
+      "definition": "O Positive"
+    },
+    {
+      "code": "ON",
+      "display": "O Rh-",
+      "definition": "O Negative"
+    }
+  ],
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Blood Group Code System</h2><tt>http://rannihospital.com/service</tt><p></p></div>"
+  },
+  "name": "RanniHospital",
+  "count": 8
+}

@@ -1,0 +1,74 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "55",
+  "title": "John Clinic Service Mapping",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "group": [
+    {
+      "element": [
+        {
+          "target": [
+            {
+              "code": "792848000",
+              "display": "Internal medicine service",
+              "equivalence": "equivalent"
+            }
+          ],
+          "code": "S001",
+          "display": "Internal Medicine Clinic"
+        },
+        {
+          "target": [
+            {
+              "code": "310156009",
+              "display": "General surgical service",
+              "equivalence": "equivalent"
+            }
+          ],
+          "code": "S002",
+          "display": "Surgery Clinic"
+        },
+        {
+          "target": [
+            {
+              "code": "310066004",
+              "display": "Paediatric service",
+              "equivalence": "equivalent"
+            }
+          ],
+          "code": "S003",
+          "display": "Pediatric Clinic"
+        },
+        {
+          "target": [
+            {
+              "code": "310060005",
+              "display": "Obstetrics and gynaecology service",
+              "equivalence": "equivalent"
+            }
+          ],
+          "code": "S004",
+          "display": "Obsteric-Gynecology Clinic"
+        }
+      ],
+      "source": "http://johnclinic.com/service",
+      "target": "http://snomed.info/sct"
+    }
+  ],
+  "url": "http://johnclinic/com/service-snomed",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>John Clinic Service Mapping</h2><tt>http://johnclinic/com/service-snomed</tt></div>"
+  },
+  "sourceCanonical": "http://johnclinic.com/bestservice",
+  "name": "John_Clinic_Service_Mapping"
+}

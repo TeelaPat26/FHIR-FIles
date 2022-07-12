@@ -1,0 +1,59 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "52",
+  "title": "John Clinic",
+  "url": "http://johnclinic.com/service",
+  "version": "1.0",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compositional": false,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "S001",
+      "display": "Internal Medicine Clinic",
+      "definition": "Provide care for adults in general"
+    },
+    {
+      "code": "S002",
+      "display": "Surgery Clinic",
+      "definition": "Provide care for patients who need surgical treatment"
+    },
+    {
+      "code": "S003",
+      "display": "Pediatric Clinic",
+      "definition": "Provide care for children in general"
+    },
+    {
+      "code": "S004",
+      "display": "Obsteric-Gynecology Clinic",
+      "definition": "Provide care for women health issues and pregnancy"
+    },
+    {
+      "code": "S005",
+      "display": "Psychiatry Clinic",
+      "definition": "Provide care for patients with mental health illness"
+    },
+    {
+      "code": "S006",
+      "display": "Ophthalmology Clinic",
+      "definition": "Provide care for patients with eye diseases"
+    }
+  ],
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>John Clinic</h2><tt>http://johnclinic.com/service</tt><p></p></div>"
+  },
+  "caseSensitive": false,
+  "versionNeeded": false,
+  "count": 6,
+  "name": "John_Clinic"
+}

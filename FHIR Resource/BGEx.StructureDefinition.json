@@ -1,0 +1,42 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "302",
+  "url": "https://johnclinic.co.th/fhir/StructureDefinition/BGEx",
+  "name": "BGEx",
+  "status": "draft",
+  "description": "This paragraph is the description of an extension",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Patient"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://johnclinic.co.th/fhir/StructureDefinition/BGEx"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://rannihospital.com/bestservice"
+        }
+      }
+    ]
+  }
+}

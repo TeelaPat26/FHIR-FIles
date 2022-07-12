@@ -1,0 +1,17 @@
+{
+    "resourceType": "Organization",
+    "id": "3",
+    "name": "Vejaree Hospital",
+    "address": [
+      {
+        "text": "234 Phaholyothin Rd., Phaya Thai, Bangkok, 10400",
+        "line": [
+          "234 Phaholyothin Rd."
+        ],
+        "district":"Phaya Thai",
+        "state": "Bangkok",
+        "postalCode": "10500",
+        "country": "THA"
+      }
+    ]
+  }

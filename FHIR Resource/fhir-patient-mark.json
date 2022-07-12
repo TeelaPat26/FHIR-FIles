@@ -1,0 +1,149 @@
+{
+  "resourceType": "Patient",
+  "identifier": [
+    {
+      "use": "usual",
+      "system": "http://moi.go.th/id",
+      "value": "1212312121",
+      "period": {
+        "start": "2001-05-06"
+      },
+      "assigner" :{
+        "display": "Ministry of Interior"
+      }
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "family": "นามแฝงลับมาก",
+      "given": [
+        "มาร์ค"
+      ],
+      "prefix": [
+        "นาย"
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "0648352638",
+      "use": "mobile"      
+    },
+    {
+      "system": "email",
+      "value": "mark.n@gmail.com",
+      "use": "home"
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1944-11-17",
+  "deceasedDateTime": "015-02-07T13:28:17-05:00",
+  "address": [
+    {
+        "use": "home",
+        "line": [
+            "30/39 Moo 2 Ngamwongwan Rd."
+        ],
+        "city": "Bangkean",
+        "district": "Meung",
+        "state": "Nonthaburi",
+        "postalCode": "11000",
+        "country": "THA"
+    }
+  ],
+  "contact": [
+    {
+      "relationship": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+              "code": "FTH",
+              "display": "Father"
+            }
+          ]
+        }
+      ],
+      "name": {
+        "given": [
+          "อีมิลลี่"
+        ],
+        "prefix" : [
+          "นาง"
+        ]
+      }      
+    },
+    {
+      "relationship": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+              "code": "MTH",
+              "display": "Mother"
+            }
+          ]
+        }
+      ],
+      "name": {
+        "given": [
+          "จอนน์"
+        ],
+        "prefix" : [
+          "นาย"
+        ]
+      }      
+    },
+    {
+      "relationship": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+          "code": "C",
+          "display": "Emergency Contact"          
+        }
+      ],
+      "name": {
+        "family": "นามแฝงลับมาก",
+        "given": [
+          "จอนน์"
+        ],
+        "prefix": "นาย"
+      },
+      "telecom" : [
+        {
+          "system": "phone",
+          "value": "034385156",
+          "use": "home"
+        },
+        {
+          "system": "phone",
+          "value": "0853833808",
+          "use": "mobile"
+        }
+      ],
+      "address": {
+        "use": "home",
+        "line": [
+          "25/3 ตึกข้าง, Meung Pattaya, Bang Lamung, Chon Buri, 20150 THA"
+        ]
+      }      
+    }
+  ],
+  "communication": [
+    {
+      "language": {
+        "coding": [
+          {
+            "system": "urn:ietf:bcp:47",
+            "code": "th",
+            "display": "Thai"
+          }
+        ],
+        "text": "Thai"
+      },
+      "preferred": true
+    }
+  ]
+}

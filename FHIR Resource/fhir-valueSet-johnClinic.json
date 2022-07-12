@@ -1,0 +1,47 @@
+{
+  "resourceType": "ValueSet",
+  "id": "53",
+  "url": "http://johnclinic.com/bestservice",
+  "title": "John Clinic's Best Service",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://johnclinic.com/service",
+        "concept": [
+          {
+            "code": "S001",
+            "display": "Internal Medicine Clinic"
+          },
+          {
+            "code": "S002",
+            "display": "Surgery Clinic"
+          },
+          {
+            "code": "S003",
+            "display": "Pediatric Clinic"
+          },
+          {
+            "code": "S004",
+            "display": "Obsteric-Gynecology Clinic"
+          }
+        ],
+        "version": "1.0"
+      }
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>John Clinic's Best Service</h2><tt>http://johnclinic.com/bestservice</tt></div>"
+  },
+  "name": "JohnClinicBestService"
+}

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="57" />
+  <url value="https://johnclinic.com/fhir/StructureDefinition/RADIPatient" />
+  <name value="RADIPatient" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Patient" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Patient" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Patient.extension">
+      <path value="Patient.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="Patient.extension:Nationality">
+      <path value="Patient.extension" />
+      <sliceName value="Nationality" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/patient-nationality" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="Patient.extension:myExtension">
+      <path value="Patient.extension" />
+      <sliceName value="myExtension" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://example.org/fhir/StructureDefinition/DeathDate" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="Patient.identifier">
+      <path value="Patient.identifier" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Patient.identifier:NationalID">
+      <path value="Patient.identifier" />
+      <sliceName value="NationalID" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Patient.identifier:NationalID.system">
+      <path value="Patient.identifier.system" />
+      <min value="1" />
+      <fixedUri value="http://moi.go.th/national-id" />
+    </element>
+    <element id="Patient.identifier:NationalID.value">
+      <path value="Patient.identifier.value" />
+      <min value="1" />
+    </element>
+    <element id="Patient.identifier:MRN">
+      <path value="Patient.identifier" />
+      <sliceName value="MRN" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Patient.identifier:MRN.system">
+      <path value="Patient.identifier.system" />
+      <min value="1" />
+      <fixedUri value="http://johnclinic.com/mrn" />
+    </element>
+    <element id="Patient.identifier:MRN.value">
+      <path value="Patient.identifier.value" />
+      <min value="1" />
+    </element>
+    <element id="Patient.identifier:Passport">
+      <path value="Patient.identifier" />
+      <sliceName value="Passport" />
+    </element>
+    <element id="Patient.identifier:Passport.system">
+      <path value="Patient.identifier.system" />
+      <fixedUri value="http://consular.mfa.go.th/passport" />
+    </element>
+    <element id="Patient.name">
+      <path value="Patient.name" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.telecom">
+      <path value="Patient.telecom" />
+      <max value="0" />
+    </element>
+    <element id="Patient.gender">
+      <path value="Patient.gender" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.birthDate">
+      <path value="Patient.birthDate" />
+      <min value="1" />
+      <mustSupport value="false" />
+    </element>
+    <element id="Patient.birthDate.extension">
+      <path value="Patient.birthDate.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="Patient.birthDate.extension:birthTime">
+      <path value="Patient.birthDate.extension" />
+      <sliceName value="birthTime" />
+      <min value="0" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/patient-birthTime" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="Patient.deceased[x]">
+      <path value="Patient.deceased[x]" />
+      <type>
+        <code value="boolean" />
+      </type>
+    </element>
+    <element id="Patient.maritalStatus">
+      <path value="Patient.maritalStatus" />
+      <binding>
+        <strength value="required" />
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>
